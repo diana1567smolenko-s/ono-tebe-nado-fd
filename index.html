@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="/fonts/fonts.css"> 
-    <link rel="stylesheet" href="/styles/global.css">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./fonts/fonts.css"> 
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
+
 
  <!-- body starts-->
   <body>
     <header class="header">
       <nav class="info_header">
-        <ul class="info_header_ul">
+        <ul class="info_header_list">
           <li><a href="#" class="no_underline">главная</a></li>
           <li><a href="#">посмотреть лоты</a></li>
           <li><a href="#">об аукционе</a></li>
         </ul>
       </nav>
       <a class="logo" 
-      href="#"> <img src="images/logo-black.svg" alt="logo black"/>
+      href="#"> <img src="images/logo-black.svg" alt="logo black">
       </a>
       <address class="address">
         <a href="#">+9 999 555 5555</a>
@@ -31,57 +32,50 @@
     </header>
 
 
-
-
    <!-- main block -->
     <main>
       <section class="cover">
-        <img src="images/cover.jpg" alt="cover image"/>
         <div class="overlay"></div>
         <h1 class="cover_title">
-          <span class="it">Оно</span>
-          <span class="you">Тебе</span>
-          <span class="need">Надо</span>
+          <span class="block_left">Оно</span>
+          <span class="block_central">Тебе</span>
+          <span class="block_right">Надо</span>
         </h1>
 
-        <div class="description">
-          <p>Аукцион вещей, в которые никто не верил</p>
+        <div class="description_block">
+          <p class="description">Аукцион вещей, в которые никто не верил</p>
+          <button class="place_a_bet">Сделать ставку</button>
         </div>
-        
-        <button class="button_place_a_bet">Сделать ставку</button>
       </section>
 
       <section class="lots">
-        <h1 class="title_lots">Лоты</h1>
+        <h2 class="title_lots">Лоты</h2>
         <ul class="cards_list">
             <!--first card-->
-          <li class="card_item"> 
+          <li class="card_item card_item_left"> 
             <a class="card_link"  href="#"> 
               <article class="card_article">
-                <div class="card_overlay"></div>
-                <img src="images/card-lot-01.jpg" class="card_image"/>
+                <div class="overlay"></div>
                 <h3>Фильм режиссёра, который бросил киношколу</h3>
                 <p>Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
               </article>
             </a>
           </li> 
           <!--second card-->
-          <li class="card_item"> 
+          <li class="card_item card_item_central"> 
             <a class="card_link"  href="#"> 
               <article class="card_article">
-                <div class="card_overlay"></div>
-                <img src="images/card-lot-02.jpg" class="card_image"/>
+                <div class="overlay"></div>
                 <h3>Книга, где описан один скучный день из жизни рекламного агента</h3>
                 <p>Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
               </article>
             </a>
           </li>
           <!--third card-->
-          <li class="card_item"> 
+          <li class="card_item card_item_right"> 
             <a class="card_link"  href="#"> 
               <article class="card_article">
-                <div class="card_overlay"></div>
-                <img src="images/card-lot-03.jpg" class="card_image"/>
+                <div class="overlay"></div>
                 <h3>Картина, которую повторит даже 5-летний сын маминой подруги</h3>
                 <p>Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
               </article>
@@ -98,14 +92,14 @@
           <!-- columns -->  
         <div class="columns"> 
           <!-- logo column -->    
-          <div class="column_first">
+          <div class="column_logo">
             <div class="logo_container">
-              <img src="/images/logo-white.svg" alt="logo white image"/>
+              <img src="./images/logo-white.svg" alt="logo white image">
             </div>
           </div>
 
           <!-- text column -->
-          <div class="column_second">
+          <div class="column_text">
             <div class="title_about"><h3>Об аукционе</h3></div>
             <div class="paragraph">
               <p> Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
@@ -137,9 +131,9 @@
 
       <!--social medias block-->
         <ul class="social-medias">
-          <li><img src="images/yt.svg" class="foooter_item"/></li>
-          <li><img src="images/vk.svg" class="foooter_item"/></li>
-          <li><img src="images/pinterest.svg" class="foooter_item"/></li>
+          <li><a href="#"><img src="./images/yt.svg" class="foooter_item" alt="youtube icon"></a></li>
+          <li><a href="#"><img src="./images/vk.svg" class="foooter_item" alt="vk icon"></a></li>
+          <li><a href="#"><img src="./images/pinterest.svg" class="foooter_item" alt="pinterest icon"></a></li>
         </ul>
     </footer> 
 
