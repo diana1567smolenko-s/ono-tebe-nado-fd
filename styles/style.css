@@ -138,11 +138,12 @@ ul, li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content:center;
+  gap: 100px; 
   padding-top: 109px;
   z-index: 3; 
   margin-top: -5px;
-  margin-left: 1px;
+  margin-left: -2px;
 }
 
 .description {
